@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "001a79fd-55f4-4bab-a49b-eae464e56ce8",
+		"name": "Assistant Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30669380"
+	},
+	"item": [
+		{
+			"name": "create emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sam Curran\",\r\n    \"mobile\":987654321,\r\n    \"email\":\"def@email.com\",\r\n    \"salary\":100000,\r\n    \"city\":\"Mumbai\",\r\n    \"country\":\"India\",\r\n    \"department\":\"Engineering\",\r\n    \"role\":\"Lead\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/assistant",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"assistant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get emp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/assistant/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"assistant",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update emp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Huda\",\r\n    \"mobile\":987654321,\r\n    \"email\":\"abc@email.com\",\r\n    \"salary\":100000,\r\n    \"city\":\"Abu-dhabi\",\r\n    \"country\":\"Dubai\",\r\n    \"department\":\"Finance\",\r\n    \"role\":\"Boss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/assistant/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"assistant",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete emp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/assistant/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"assistant",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role_name\":\"Admin\"\r\n}\r\n{\r\n    \"role_name\":\"Employee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/role",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"role"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
